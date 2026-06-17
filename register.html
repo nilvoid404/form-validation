@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Register New Account</h1>
+        <form id="registrationForm">
+            <div class="form-control">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label class="error-message" id="usernameError" style="color: red; display: none;"></label><br>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label class="error-message" id="emailError" style="color: red; display: none;"></label><br>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <label class="error-message" id="passwordError" style="color: red; display: none;"></label><br>
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <br>
+                <label class="error-message" id="confirmPasswordError" style="color: red; display: none;"></label><br>
+            </div>
+            <a href="Login.html"><p>Already Have an Account? Login Now.</p></a>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
