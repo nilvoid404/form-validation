@@ -17,17 +17,43 @@ function validateForm() {
     console.log("Username:", usernameValue);  
     console.log("Password:", passwordValue);
 
+    let isValid: true;
+
     if (usernameValue === '') {
         showError(username, 'Username is required');
-    } else {
+        isValid: false;
+    } 
+    else if(!/^[a-zA-Z0-9_]+$/.test(usernameValue))   {
+      
+        showError(username, 'Username can only contain letters,numbers and _');
+        isValid: false;
+    }
+    else {
         showSuccess(username);
     }
 
     if (passwordValue === ''){
         showError(password, 'Password is Required');
-    } else {
+        isValid: false;
+    } else if(passwordValue.length<=8) {
+        showError(password, 'Password must contain atleast 8 letters.')
+        isValid: false;
+    }
+        else {
         showSuccess(password);
 }
+
+
+if(isValid){
+    const userData={
+    username = usernameValue,
+    password = passwordValue
+};
+
+localStorage.setItem('registeredUser',JSON.stringify(userData));
+    window.location.href = 'Index.html'; 
+
+
 }
 
 
