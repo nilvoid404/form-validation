@@ -81,7 +81,7 @@ if (isValid){
 
     localStorage.setItem('registeredUser',JSON.stringify(userData));
     alert('Registeration sucessful! Please Login.');
-    window.location.href = 'Login.html'; 
+    window.location.href = '../Login/Login.html'; 
 
 }
 
