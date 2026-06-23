@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Login to Continue</h1>
+        <form id="registrationForm">
+            <div class="form-control">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label class="error-message" id="usernameError" style="color: red; display: none;"></label><br><br>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <label class="error-message" id="passwordError" style="color: red; display: none;"></label><br><br>
+            </div>
+            <a href="../Register/register.html"><p>Don't Have an Account? Resgister Now.</p></a>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+    <script src="../Login/login.js"></script>
+</body>
+</html>
